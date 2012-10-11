@@ -1,4 +1,4 @@
-package com.jamesward;
+package org.webjars;
 
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.bundles.AssetsBundle;
@@ -14,7 +14,7 @@ public class MainService extends Service<Configuration> {
     private MainService() {
         super("bars");
         addBundle(new AssetsBundle("/assets", 0, "/"));
-        addBundle(new AssetsBundle("/public/", 0, "/public"));
+        addBundle(new AssetsBundle("/META-INF/resources/webjars", 0, "/webjars"));
     }
 
     @Override

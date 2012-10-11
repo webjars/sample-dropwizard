@@ -1,4 +1,4 @@
-package com.jamesward;
+package org.webjars;
 
 import javax.ws.rs.Path;
 
