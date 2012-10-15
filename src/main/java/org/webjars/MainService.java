@@ -12,7 +12,7 @@ public class MainService extends Service<Configuration> {
     }
 
     private MainService() {
-        super("bars");
+        super("sample-dropwizard");
         addBundle(new AssetsBundle("/assets", 0, "/"));
         addBundle(new AssetsBundle("/META-INF/resources/webjars", 0, "/webjars"));
     }
